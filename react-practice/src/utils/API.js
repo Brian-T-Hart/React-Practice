@@ -1,6 +1,11 @@
 import axios from "axios";
 
 export default {
+    // Scrape Articles
+    scrapeArticles: function () {
+        console.log("scrapeArticles..API.js");
+        return axios.get("api/articles/scrape");
+    },
     // Gets all books
     getArticles: function () {
         return axios.get("/api/articles");
